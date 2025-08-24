@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Onboarding page</title>
+  <link rel="stylesheet" href="onboarding.css" />
+</head>
+<body>
+
+<div class="container">
+  <h2>Patient Onboarding</h2>
+
+  <form>
+    <section>
+
+      <label>Age</label>
+      <input type="number" required>
+
+      <label>Gender</label>
+      <select required>
+        <option value="">Select...</option>
+        <option>Male</option>
+        <option>Female</option>
+                <option>Other</option>
+      </select>
+
+    </section>
+
+    <section>
+      <h3>Main Health Concern</h3>
+      <label>Chronic Condition</label>
+      <textarea required></textarea>
+
+
+    </section>
+
+    <section>
+ 
+      <label>Past Surgeries </label>
+      <input type="text" placeholder="If any">
+
+      <label>Current Medications </label>
+      <input type="text" placeholder="List medications">
+
+      <label>Allergies</label>
+      <input type="text">
+    </section>
+
+    <section>
+      <button type="submit">Submit</button>
+    </section>
+  </form>
+</div>
+<script>
+const form = document.querySelector("form");
+
+form.addEventListener("submit", (e) => {
+  e.preventDefault(); 
+  alert("✅ Submitted successfully!");
+  form.reset(); 
+});
+</script>
+
+</body>
+</html>

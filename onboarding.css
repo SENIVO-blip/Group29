@@ -1,0 +1,163 @@
+:root {
+  --peacock: #136f58;
+  --sapphire: #1261A0;
+  --spruce: #2E8B57;
+  --lace: #000000;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(#ade0d4, #124875);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 40px auto;
+  background: rgba(255, 255, 255, 0.95);
+  padding: 25px;
+  border-radius: 10px;
+  border: 2px solid var(--spruce);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+h2 {
+  text-align: center;
+  color: var(--sapphire);
+}
+
+h3 {
+  margin-top: 25px;
+  color: var(--peacock);
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: 15px;
+  color: var(--sapphire);
+}
+
+input, select, textarea, button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid var(--spruce);
+  font-size: 14px;
+}
+
+input, select, textarea {
+  color: var(--lace);
+  
+}
+
+textarea {
+  resize: vertical;
+}
+
+button {
+  background: var(--spruce);
+  color: #fadeb0;
+  border: none;
+  margin-top: 20px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #55ceb0;
+}
+
+
+.container::before{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  background: linear-gradient(0deg, transparent,
+transparent, #45f3ff, #45f3ff, #45f3ff );
+z-index: 1;
+transform-origin: bottom right ;
+animation: animate 6s linear infinite;
+}
+
+.container::after{
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  background: linear-gradient(0deg, transparent,
+transparent, #45f3ff, #45f3ff, #45f3ff );
+z-index: 1;
+transform-origin: bottom right ;
+animation: animate 6s linear infinite;
+animation: -3s;
+}
+
+
+
+
+
+
+.container {
+  background: rgba(255, 255, 255, 0.15) !important;
+  backdrop-filter: blur(12px) !important;
+  -webkit-backdrop-filter: blur(12px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.18) !important;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2) !important;
+}
+
+
+button {
+  background: linear-gradient(135deg, rgba(46, 139, 87, 0.8), rgba(31, 138, 112, 0.8)) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 
+    0 4px 6px rgba(0, 0, 0, 0.1),
+    inset 0 1px 3px rgba(255, 255, 255, 0.2) !important;
+  transition: all 0.3s ease !important;
+  position: relative !important;
+  overflow: hidden !important;
+}
+
+button:hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 
+    0 6px 12px rgba(0, 0, 0, 0.15),
+    inset 0 1px 3px rgba(255, 255, 255, 0.3) !important;
+}
+
+
+button::after {
+  content: "" !important;
+  position: absolute !important;
+  top: -50% !important;
+  left: -50% !important;
+  width: 200% !important;
+  height: 200% !important;
+  background: linear-gradient(
+    to bottom right,
+    rgba(255, 255, 255, 0.3),
+    rgba(255, 255, 255, 0)
+  ) !important;
+  transform: rotate(30deg) !important;
+  pointer-events: none !important;
+}
+
+
+input, select, textarea {
+  background: rgba(255, 255, 255, 0.8) !important;
+  border: 1px solid rgba(31, 138, 112, 0.3) !important;
+  transition: all 0.3s ease !important;
+}
+
+input:focus, select:focus, textarea:focus {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-color: var(--peacock) !important;
+  box-shadow: 0 0 0 2px rgba(31, 138, 112, 0.2) !important;
+  outline: none !important;
+}
