@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="signup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="signup">
+        <h2>Create Account</h2>
+        <form id="signupform">
+          <input type="text" id="name" placeholder="Full Name" required />
+          <input type="email" id="email" placeholder="Email" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <button id="btn" type="submit">Sign Up</button>
+        </form>
+      </div>
+      <div class="welcome">
+        <h2>Welcome Back!</h2>
+        <p>
+          Already have an account? Sign in to continue your journey with us.
+        </p>
+        <button id="btn2" onclick="redirectToSignIn()">Sign In</button>
+      </div>
+    </div>
+
+    <script>
+      function redirectToSignIn() {
+        window.location.href = "signin.html";
+      }
+    </script>
+  </body>
+</html>
